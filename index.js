@@ -14,11 +14,11 @@ button.addEventListener('click', () => {
     } else if (ACTion === "Food" && satiety >= 1) {
         result.innerHTML = "Питомец уже сыт. Вы не можете его покормить. Его сытость = " + satiety
     }
-    if (ACTion === "Treat" ) {
+    if (ACTion === "Treat" && satiety < 2) {
         satiety = satiety + 0.5
         energy = energy + 0.2
         result.innerHTML = "Вы дали питомцу вкусняшку. Его сытость = " + satiety
-    } else if (ACTion === "Treat" && satiety > 2) {
+    } else if (ACTion === "Treat" && satiety >= 2) {
         result.innerHTML = "Питомцу нельзя много вкусняшек. Его сытость = " + satiety
     }
     if (ACTion === "Play" && energy >= 1) {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,69 @@
     <title>Тамагочи</title>
     <script src="index.js" defer></script>
     <style>
-        label{
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        label {
             font-size: 40px;
             color: maroon;
+            display: flex;
+            justify-content: center;
         }
-        #ACT{
+
+        #ACT {
+            display: flex;
+            justify-content: center;
             font-size: 30px;
             color: brown;
+
         }
-        #action{
+
+        #action {
             font-size: 40px;
+            display: flex;
+            justify-content: center;
+            width: 500px;
         }
-        #button{
+
+        button {
+            display: flex;
+            justify-content: center;
             font-size: 40px;
             background-color: goldenrod;
-        }
-        #result{
-            font-size: 40px;
+            width: 500px;
+
         }
 
-
+        #result {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
+
 <body>
     <label>Ваш персональный питомец</label>
     <p id="ACT">Что сделать?</p>
     <select id="action">
         <option value="Food">Покормить</option>
+        <option value="Treat">Дать вкусняшку</option>
         <option value="Play">Поиграть</option>
         <option value="Sleep">Уложить спать</option>
         <option value="Bath">Помыть питомца</option>
         <option value="Walk">Вывести на прогулку</option>
         <option value="Study">Научить командам</option>
         <option value="Shop">Отправить в магазин</option>
-        <option value="Treat">Дать вкусняшку</option>
-
     </select>
     <button id="button">Выполнить</button>
     <div class="descript">
         <p id="result"></p>
     </div>
 </body>
+
 </html>
