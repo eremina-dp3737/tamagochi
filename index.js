@@ -1,6 +1,7 @@
 const action = document.getElementById('action')
 const button = document.querySelector('#button')
 const result = document.getElementById('result')
+const chars = document.getElementById('chars')
 let satiety = 1
 let energy = 1
 let clean = 1
@@ -13,6 +14,7 @@ button.addEventListener('click', () => {
         energy = energy + 0.2
         happy = happy + 0.5
         result.innerHTML = "Вы покормили питомца. Его сытость = " + satiety
+        chars.innerHTML = `Сытость равна ${satiety}`
     } else if (ACTion === "Food" && satiety >= 1) {
         result.innerHTML = "Питомец уже сыт. Вы не можете его покормить. Его сытость = " + satiety
     }
@@ -78,5 +80,8 @@ button.addEventListener('click', () => {
     } else if (ACTion === "Shop" && energy < 0.7) {
         result.innerHTML = "Питомец устал и не может пойти в магазин. Его энергия = " + energy
     }
+    chars.innerHTML = `Сытость равна ${satiety}\n` + `Энергия равна ${energy}\n` + `Чистота равна ${clean}\n` + `Счастье равнo ${happy}\n`
 
+
+    
 })
