@@ -6,13 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тамагочи</title>
     <script src="index.js" defer></script>
+    <style>
+        label{
+            font-size: 40px;
+            color: maroon;
+        }
+        #ACT{
+            font-size: 30px;
+            color: brown;
+        }
+        #action{
+            font-size: 40px;
+        }
+        #button{
+            font-size: 40px;
+            background-color: goldenrod;
+        }
+        #result{
+            font-size: 40px;
+        }
+
+
+    </style>
 </head>
 <body>
-    <p>Что сделать?</p>
+    <label>Ваш персональный питомец</label>
+    <p id="ACT">Что сделать?</p>
     <select id="action">
         <option value="Food">Покормить</option>
         <option value="Play">Поиграть</option>
         <option value="Sleep">Уложить спать</option>
+        <option value="Bath">Помыть питомца</option>
+        <option value="Walk">Вывести на прогулку</option>
+        <option value="Study">Научить командам</option>
+        <option value="Shop">Отправить в магазин</option>
+        <option value="Treat">Дать вкусняшку</option>
+
     </select>
     <button id="button">Выполнить</button>
     <div class="descript">
